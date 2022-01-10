@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    cursor: pointer;
+    font-size: 30px;
+    font-family: cursive;
+}
+.logo a{
+    text-decoration: none;
+    color: #ffffff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+    background-color: purple;
+}
+.nav{
+    list-style: none;
+}
+.nav li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+.nav li a{
+    transition: .3s;
+    color: white;
+}
+.nav li a:hover{
+    color: brown;
+}
+.btn{
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: crimson;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: purple;
+    padding: 70px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer-column{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-column h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-column h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: crimson;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-column ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-column ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-column ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+.footer-column .socials a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-column .socials a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+
+}
+.image{
+    color: #ffffff;
+}
+.text-center{
+	color:#fff;
+    font-size: 23px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+    color: black;
+}
+.box{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+    background-color: #ffffff;
+	border-radius:8px;
+	padding:70px 100px;
+    border: 1px solid transparent;
+    box-shadow: 8px 8px 8px 8px rgb(42 52 61/16%);
+}
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color: black;	
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
+.btn{
+	color:#fff;
+	background-color:#e74c3c;
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:50px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+}
+.contact{
+    color: black;
+    padding-left: 100px;
+    line-height: 50px;
+}
+.about{
+    background-color:black;
+    text-align: center;
+    font-size: 54px;
+    color: #ffffff;
+    padding: 50px;
+    margin: 50px;
+}
+#paragraph{
+    display: block;
+    text-align: center;
+}
+.cars{
+    color: black;
+    text-align: center;
+}

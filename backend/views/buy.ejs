@@ -1,0 +1,10 @@
+<% cars.forEach( (cars, index) => { %>
+    <div class="cars">
+        <ul>
+        <li><a href="/cars/buy/<%= cars.id%>"><img src="<%= cars.image%>" width="250" height="250"></a></li>
+        <li> <%= cars.make %> </li>
+        <li> <%= cars.model %> </li>
+        <li> <%= cars.year %> </li>
+        </ul>
+    </div>
+<% }) %>

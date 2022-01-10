@@ -1,0 +1,18 @@
+<h1>Edit Listing</h1>
+
+<form action="/cars/buy/<%=cars.id%>?_method=PUT" method='POST'>
+    <label for="image">Image</label>
+    <input type="text" name="image" id='image' value="<%=cars.image%>">
+
+    <label for="make">Make</label>
+    <input type="text" name="make" id='make' value="<%=cars.make%>">
+
+    <label for="model">Model</label>
+    <input type="text" name="model" id='model' value="<%=cars.model%>">
+
+    <label for="year">Year</label>
+    <input type="text" name="year" id="year" value="<%=cars.year%>">
+
+        <input type="submit" value='Edit'>
+
+</form>
