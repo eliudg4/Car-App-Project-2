@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
-const port = 4444
+// const PORT = 4444
+app.set('port', process.env.port || 4444)
 const session = require('express-session')
 const methodOverride = require('method-override')
 const CarsController = require('./controllers/cars')
@@ -27,4 +28,4 @@ app.use('/session', sessionController)
 app.set('view engine', 'ejs')
 
 
-app.listen(port, () => console.log(`I am running on port ${port}`))
+app.listen(app.get('port'), () => console.log(`I am running on port ${app.get('port')}`))
