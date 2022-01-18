@@ -1,18 +1,33 @@
-<h1>Edit Listing</h1>
+<h1 style="background-color:black;
+text-align: center;
+font-size: 54px;
+color: #ffffff;
+padding: 50px;
+margin: 50px;">Edit Listing</h1>
 
+<div class="edit">
 <form action="/cars/buy/<%=cars.id%>?_method=PUT" method='POST'>
-    <label for="image">Image</label>
-    <input type="text" name="image" id='image' value="<%=cars.image%>">
+    <div class="edit-container">
+        <input type="text" name="image" id='image' value="<%=cars.image%>">
+        <label>Image</label>
+    </div>    
 
-    <label for="make">Make</label>
-    <input type="text" name="make" id='make' value="<%=cars.make%>">
+    <div class="edit-container">
+        <input type="text" name="make" id='make' value="<%=cars.make%>">
+        <label>Make</label>
+    </div>    
 
-    <label for="model">Model</label>
-    <input type="text" name="model" id='model' value="<%=cars.model%>">
+    <div class="edit-container">
+        <input type="text" name="model" id='model' value="<%=cars.model%>">
+        <label>Model</label>
+    </div>    
 
-    <label for="year">Year</label>
-    <input type="text" name="year" id="year" value="<%=cars.year%>">
+    <div class="edit-container">
+        <input type="text" name="year" id="year" value="<%=cars.year%>">
+        <label>Year</label>
+    </div>
 
-        <input type="submit" value='Edit'>
+        <input type="submit" value='Edit' style="cursor: pointer; color: #fff; font-size: 16px; letter-spacing: 2px; padding: 10px 30px; border-radius: 5px; background: rgba(117, 39, 39, 0.363);">
 
 </form>
+</div>

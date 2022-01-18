@@ -1,23 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+html, body{
+    /* height: 100%; 
+    position: relative;
+     margin: 0;
+     min-height: 100vh;  
+     margin-bottom: -50px;
+     clear: both; 
+     padding-left: 300px;
+    padding-right: 300px; */
+    
+}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 16px;
     background-color: #ffffff;
+    min-height: calc(100vh - 191.25px - 233.75px );
+    
+    /* position: relative; */
+    
 }
 a{
     text-decoration: none;
 }
 .logo{
     cursor: pointer;
-    font-size: 30px;
-    font-family: cursive;
+    margin-right: 39px;
 }
 .logo a{
     text-decoration: none;
@@ -27,23 +41,27 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 70px;
-    background-color: purple;
+    padding: 30px 60px;
+    background-color: rgb(192, 176, 151);
 }
 .nav{
     list-style: none;
 }
 .nav li{
+    /* justify-content: space-between;
+    display: flex; */
     display: inline-block;
     padding: 0 15px;
     text-transform: uppercase;
+    margin-right: 450px;
+    font-size: 26px;
 }
 .nav li a{
     transition: .3s;
     color: white;
 }
 .nav li a:hover{
-    color: brown;
+    color: grey;
 }
 .btn{
     cursor: pointer;
@@ -52,7 +70,7 @@ header{
     letter-spacing: 2px;
     padding: 10px 30px;
     border-radius: 5px;
-    background: crimson;
+    background: blue;
 }
 .container{
     max-width: 1170px;
@@ -66,11 +84,14 @@ ul{
     list-style: none;
 }
 .footer{
-    background-color: purple;
-    padding: 70px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    /* position: absolute; */
+    background-color: rgb(192, 176, 151);
+    padding: 45px 0px;
+    display: block;
+     width: 100%; 
+     /* margin-top: auto; */
+     bottom: 0;
+    
 }
 .footer-column{
     width: 25%;
@@ -89,7 +110,7 @@ ul{
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: crimson;
+    background-color: rgba(117, 39, 39, 0.363);
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -103,7 +124,7 @@ ul{
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
+    color: black;
     display: block;
     transition: all 0.3s ease;
 }
@@ -129,7 +150,14 @@ ul{
 
 }
 .image{
-    color: #ffffff;
+    width: 50%;
+    float: right;
+}
+.image img{
+    width: 50%;
+    margin-top: 75px;
+    margin-left: 500px;
+    border-radius: 30%;
 }
 .text-center{
 	color:#fff;
@@ -140,19 +168,24 @@ ul{
     color: black;
 }
 .box{
-	position:absolute;
+    position: relative;
 	left:50%;
 	top:50%;
 	transform: translate(-50%,-50%);
     background-color: #ffffff;
 	border-radius:8px;
-	padding:70px 100px;
+	/* padding:70px 100px; */
+    margin-left: 100px;
+    margin-right: 2000px;
     border: 1px solid transparent;
     box-shadow: 8px 8px 8px 8px rgb(42 52 61/16%);
+    margin-bottom: 120px;
+    margin-top: 350px;
+    height: 500px;
 }
 .input-container{
 	position:relative;
-	margin-bottom:25px;
+	margin-bottom:50px;
 }
 .input-container label{
 	position:absolute;
@@ -169,7 +202,7 @@ ul{
   width:100%;
   padding:8px 0 5px 0;
   font-size:16px;
-  color:#fff;
+  color:black;
 }
 .input-container input:focus{ 
  border:none;	
@@ -178,7 +211,7 @@ ul{
 }
 .btn{
 	color:#fff;
-	background-color:#e74c3c;
+	background-color: rgba(117, 39, 39, 0.363);
 	outline: none;
     border: 0;
     color: #fff;
@@ -197,7 +230,17 @@ ul{
 .contact{
     color: black;
     padding-left: 100px;
-    line-height: 50px;
+    line-height: 100px;
+    padding-top: 50px;
+    font-size: x-large;
+    border-radius:8px;
+    border: 1px solid transparent;
+    box-shadow: 8px 8px 8px 8px rgb(42 52 61/16%);
+    background-color: rgb(192, 176, 151);
+    margin: 100px 1000px 216px 1000px;
+}
+.contact-box{
+    padding: 0px 100px 0px 100px;
 }
 .about{
     background-color:black;
@@ -211,7 +254,280 @@ ul{
     display: block;
     text-align: center;
 }
-.cars{
-    color: black;
+.paragraph{
     text-align: center;
+    padding-left: 1000px;
+    padding-right: 1000px;
+    font-size: 26px;
+    margin-bottom: 106px;
+}
+.cars{
+    display: flex;
+    justify-content: center;
+    flex-basis: 75%;
+    flex-wrap: wrap;
+    margin: 30px;
+    
+}
+.car-card{
+    background-color: white;
+	border-radius:8px;
+    border: 1px solid transparent;
+    box-shadow: 8px 8px 8px 8px rgb(42 52 61/16%);
+    width: 1100px;
+    height: 300px;
+    margin: 10px;
+}
+.car-image img{
+    height: 250px;
+    margin-bottom: 30px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+.car-info {
+    background-color: rgba(117, 39, 39, 0.363);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.car-info h5{
+    margin-left: 10px;
+}
+.home-p{
+     display: block;
+    font-size: 24px;
+	border-radius:8px;
+    border: 1px solid transparent;
+    box-shadow: 8px 8px 8px 8px rgb(42 52 61/16%);
+    width: 680px;
+    height: 500px;
+    margin-bottom: 1000px;
+    background-color: rgb(192, 176, 151);
+    margin: 10px;
+    margin-left: 730px;
+    margin-top: 50px;
+    font-family: cursive;
+    line-height: 30px;
+     text-align: center; 
+     padding: 70px 100px;
+}
+
+.buy div{
+    display: flex;
+    justify-content: center;
+    border-radius: 15 0 15 0 ;
+    height: 500px;
+}
+.sell-box{
+	margin-left: 1500px;
+	transform: translate(-50%,-50%);
+    background-color: #ffffff;
+	border-radius:8px;
+	padding:60px 50px;
+    border: 1px solid transparent;
+    box-shadow: 8px 8px 8px 8px rgb(42 52 61/16%);
+    height: 800px;
+    width: 600px;
+    margin-top: 500px;
+}
+.sell-container{
+	position:relative;
+	margin-bottom:100px;
+}
+.sell-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:32px;
+	color: black;	
+	transition: all 0.5s ease-in-out;
+}
+.sell-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:black;
+}
+.sell-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
+.sell-container input:focus ~ label,
+.sell-container input:valid ~ label{
+	top:-12px;
+	font-size:18px;
+}
+.page{
+    display: flex;
+    justify-content: space-between;
+   margin: 150px;
+}
+.back{
+    margin-left: 350px;
+    opacity: 0.3;
+}
+.next{
+    margin-right: 350px;
+}
+.available{
+    padding-bottom: 75px;
+    padding-top: 35px;
+    margin-left:475px;
+    text-decoration: underline;
+}
+.back-two{
+    margin-left: 350px;
+}
+.next-two{
+    margin-right: 350px;
+    opacity: 0.3;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.home-register{
+	position:absolute;
+    right: 300px;
+    top: 1270px;
+	transform: translate(-50%,-50%);
+    background-color: #ffffff;
+	border-radius:8px;
+	padding:70px 100px;
+    border: 1px solid transparent;
+    box-shadow: 8px 8px 8px 8px rgb(42 52 61/16%);
+}
+.home-container{
+	position:relative;
+	margin-bottom:20px;
+    
+}
+.home-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color: black;	
+	transition: all 0.5s ease-in-out;
+}
+.home-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:black;
+}
+.home-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
+.home-container input:focus ~ label,
+.home-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+}
+.show{
+    display: flex;
+    justify-content: center;
+    flex-basis: 75%;
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-bottom: 551px;
+    height: 388px;
+}
+.show-card{
+    background-color: white;
+	border-radius:8px;
+    border: 1px solid transparent;
+    box-shadow: 8px 8px 8px 8px rgb(42 52 61/16%);
+    width: 1100px;
+    height: 800px;
+    margin: 10px;
+}
+.show-image img{
+    height: 660px;
+    margin-bottom: 30px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.show-info {
+    background-color: rgba(117, 39, 39, 0.363);
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+}
+.show-info h5{
+    margin-left: 10px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    /* padding-bottom: 700px; */
+    padding-left: 35px;
+    margin-left: 1000px;
+    margin-right: 1000px;
+}
+.buttons form{
+    margin-bottom:40px;
+}
+.buttons button{
+    margin-bottom: 40px;
+}
+.buttons p{
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: white;
+}
+.edit{
+	margin-left: 1500px;
+	transform: translate(-50%,-50%);
+    background-color: #ffffff;
+	border-radius:8px;
+	padding:60px 50px;
+    border: 1px solid transparent;
+    box-shadow: 8px 8px 8px 8px rgb(42 52 61/16%);
+    height: 800px;
+    width: 600px;
+    margin-top: 500px;
+}
+.edit-container{
+	position:relative;
+	margin-bottom:100px;
+}
+.edit-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:32px;
+	color: black;	
+	transition: all 0.5s ease-in-out;
+}
+.edit-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:black;
+}
+.edit-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
+.edit-container input:focus ~ label,
+.edit-container input:valid ~ label{
+	top:-12px;
+	font-size:18px;
 }

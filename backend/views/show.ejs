@@ -1,13 +1,51 @@
-<img src="<%= cars.image %>" alt="image" width="750" height="750">
-    <p> <%= cars.make %> </p>
-    <p> <%= cars.model %> </p>
-    <p> <%= cars.year %> </p>
+<section class="show">
+    <div class="show-card">
+        <div class="show-image">
+            <img src="<%= cars.image %>" alt="image" width="750" height="750">
+        </div>    
+            <div class="show-info">
+                    <h5> <%= cars.make %> </h5>
+                    <h5> <%= cars.model %> </h5>
+                    <h5> <%= cars.year %> </h5>
+            </div>    
+    </div> 
+</section>  
 
-<button>BUY</button>
-<form action='/cars/buy/<%= cars.id %>?_method=DELETE' method="POST">
-    <input type="submit" value="DELETE"/>
-</form>
-
-<p><a href="/cars/buy/<%=cars.id%>/edit">Edit This Listing</a></p>
-
+<div class="buttons">
+    <button style="color:#fff;
+    background-color: rgba(117, 39, 39, 0.363);
+    outline: none;
+    border: 0;
+    color: #fff;
+    padding:10px 20px;
+    text-transform:uppercase;
+    margin-top:20px;
+    border-radius:2px;
+    cursor:pointer;
+    position:relative;">BUY</button>
+    <form action='/cars/buy/<%= cars.id %>?_method=DELETE' method="POST">
+        <input type="submit" value="DELETE" style="color:#fff;
+        background-color: rgba(117, 39, 39, 0.363);
+        outline: none;
+        border: 0;
+        color: #fff;
+        padding:10px 20px;
+        text-transform:uppercase;
+        margin-top:20px;
+        border-radius:2px;
+        cursor:pointer;
+        position:relative;"/>
+    </form>
+    <p style="color:#fff;
+    background-color: rgba(117, 39, 39, 0.363);
+    outline: none;
+    border: 0;
+    color: #fff;
+    padding:10px 20px;
+    text-transform:uppercase;
+    margin-top:20px;
+    border-radius:2px;
+    cursor:pointer;
+    position:relative;"><a href="/cars/buy/<%=cars.id%>/edit">Edit This Listing</a></p>
+</div>    
 

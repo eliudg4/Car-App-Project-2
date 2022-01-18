@@ -1,0 +1,24 @@
+<h1 class="available">AVAILABLE CARS</h1>
+<section class="cars">
+    <% cars.forEach( (cars, index) => { %>
+
+    <div class="car-card">
+        <div class="car-image">
+            <a href="/cars/buy/<%= cars.id%>"><img src="<%= cars.image%>"></a>
+        </div>
+
+        <div class="car-info">
+            <h5><%= cars.make %></h5>
+            <h5><%= cars.model %></h5>
+            <h5 style="background-image: none;"><%= cars.year %></h5>
+      </div>
+    </div>
+  
+    <% }) %>
+  </section>
+
+  <div class="page">
+      <a style="cursor: pointer; color: #fff; font-size: 16px; letter-spacing: 2px; padding: 10px 30px; border-radius: 5px; background: rgba(117, 39, 39, 0.363);" class="back-two" href="/cars/buy">BACK</a>
+      <p>Page 2 of 2</p>
+      <button class="next-two" style="cursor: pointer; color: #fff; font-size: 16px; letter-spacing: 2px; padding: 10px 30px; border-radius: 5px; background: rgba(117, 39, 39, 0.363)"><a href="#"></a>NEXT</button>
+  </div>

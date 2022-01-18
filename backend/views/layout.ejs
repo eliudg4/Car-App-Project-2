@@ -10,17 +10,17 @@
 </head>
 <body>
     <header>
-        <p class="logo"> <a href="/cars">CarWorld</a></p>
-    <nav>
-       <ul class="nav">
+        <a  class="logo" href="/cars"><img src="/logo.jpg" alt="logo" height="125px"></a>
+        <ul class="nav">
            <li><a href="/cars/buy">Buy</a></li>
            <li><a href="/cars/sell">Sell</a></li>
            <li><a href="/cars/aboutUs">About</a></li>
            <li><a href="/cars/contactUs">Contact</a></li>
        </ul>
     </nav>
-    <a href="/cars/login_register" class="btn">Login/Register</a>
+    <a href="/session/login" class="btn">Login/Register</a>
     </header>
+    <%- body %>
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -45,6 +45,5 @@
             </div>
         </div>
     </footer>
-    <%- body %>
 </body>
 </html>

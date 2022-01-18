@@ -6,10 +6,6 @@ router.get('/', (req, res) => {
         res.render('home')
 })
 
-router.get('/login_register', (req, res) => {
-   res.render("login_register")
-})
-
 router.get('/contactUs', (req, res) => {
     res.render('contactUs')
 })
@@ -21,6 +17,12 @@ router.get('/aboutUs', (req, res) => {
 router.get('/buy', (req, res) => {
     Car.find({}, (err, cars) => {
         res.render('buy', {cars})
+    })
+})
+
+router.get('/buy-two', (req, res) => {
+    Car.find({}, (err, cars) => {
+        res.render('buy-two', {cars})
     })
 })
 
@@ -58,7 +60,7 @@ router.put('/buy/:id', (req, res) => {
 router.get('/buy/:id/edit', (req, res) => {
     Car.findById(req.params.id, (err, cars) => {
         res.render('edit', {cars})
-        // res.redirect('/cars/buy')
+        // res.redirect('buy')
     })
 })
 
