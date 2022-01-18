@@ -174,14 +174,14 @@ ul{
 	transform: translate(-50%,-50%);
     background-color: #ffffff;
 	border-radius:8px;
-	/* padding:70px 100px; */
+	padding:70px 100px;
     margin-left: 100px;
     margin-right: 2000px;
     border: 1px solid transparent;
     box-shadow: 8px 8px 8px 8px rgb(42 52 61/16%);
     margin-bottom: 120px;
-    margin-top: 350px;
-    height: 500px;
+    margin-top: 355px;
+    height: 620px;
 }
 .input-container{
 	position:relative;
@@ -394,7 +394,7 @@ ul{
 }
 .home-register{
 	position:absolute;
-    right: 300px;
+    right: 450px;
     top: 1270px;
 	transform: translate(-50%,-50%);
     background-color: #ffffff;
@@ -487,6 +487,9 @@ ul{
     margin-bottom: 40px;
     text-decoration: none;
     color: white;
+}
+.buttons a{
+    color: inherit;
 }
 .edit{
 	margin-left: 1500px;
