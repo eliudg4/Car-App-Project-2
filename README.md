@@ -1,1 +1,3 @@
-# Car-App-Project-2
+For my second project of my software engineer immersive bootcamp, I decided to created a full-stack e-commerce car website / application. This site allows you to browse through our inventory where you can buy anything vehicle that catches your eye. You are also given the option to also sell a car in your possession on our website free of charge. To do this you would have to first register and creat an account with us.
+For the front-end design of my app I used HTML, CSS, and JavaScript. For the back-end I used express and node.js for the server-side and mongoDB for my database.
+This has been a great experience and a eye opener as to what goes in to creating these massive web applications
