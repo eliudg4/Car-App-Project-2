@@ -45,7 +45,6 @@ router.get('/login', (req, res) => {
          if(emailToLogin) {
              const validPassword = bcrypt.compareSync(req.body.password, emailToLogin.password)
              if(validPassword) {
-                //  res.send('User is logged in')
                 res.redirect('/session/home')
              } else {
                  res.redirect('login')

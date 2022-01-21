@@ -60,7 +60,6 @@ router.put('/buy/:id', (req, res) => {
 router.get('/buy/:id/edit', (req, res) => {
     Car.findById(req.params.id, (err, cars) => {
         res.render('edit', {cars})
-        // res.redirect('buy')
     })
 })
 
