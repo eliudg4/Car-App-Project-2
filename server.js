@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require('express')
 const app = express()
 // const PORT = 4444
@@ -16,7 +17,7 @@ app.use(methodOverride('_method'))
 app.use(express.urlencoded({extended: false}))
 
 app.use(session({
-    secret: 'hello',
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false
 }))
