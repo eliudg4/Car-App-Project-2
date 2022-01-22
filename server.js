@@ -2,7 +2,7 @@ require("dotenv").config()
 const express = require('express')
 const app = express()
 // const PORT = 4444
-app.set('port', process.env.port || 4444)
+app.set('port', process.env.PORT || 4444)
 const session = require('express-session')
 const methodOverride = require('method-override')
 const CarsController = require('./controllers/cars')
